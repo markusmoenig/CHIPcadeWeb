@@ -1,6 +1,6 @@
 +++
 archetype = "home"
-title = "Forged Thoughts"
+title = "CHIPcade"
 +++
 
 Coming soon
