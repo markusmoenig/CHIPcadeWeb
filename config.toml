@@ -1,6 +1,6 @@
 baseURL = 'https://chipcade.com'
 languageCode = 'en-us'
-title = 'Modeling & Rendering Language'
+title = 'Arcade Chip Emulator'
 
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-relearn"
