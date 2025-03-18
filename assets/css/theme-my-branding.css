@@ -1,0 +1,6 @@
+@import "theme-relearn-dark.css";
+
+:root {
+    --CODE-theme: relearn-dark;
+    --PRIMARY-color: rgba(201, 213, 249, 255);
+}

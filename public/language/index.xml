@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CHIPcade Assembly on Arcade Chip Emulator</title>
+    <title>CHIPcade Assembly - Arcade Chip Emulator</title>
     <link>http://localhost:1313/language/index.html</link>
-    <description>Recent content in CHIPcade Assembly on Arcade Chip Emulator</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://localhost:1313/language/index.xml" rel="self" type="application/rss+xml" />
+    <description>TODO</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/language/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Layers</title>
       <link>http://localhost:1313/language/layers/index.html</link>
@@ -25,14 +26,7 @@
       <link>http://localhost:1313/language/reference/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/language/reference/index.html</guid>
-      <description>CPU 16bit processor with 8 registers, flags and a stack.
-Instruction Set TAG CodeTag. Set a code tag (for Jump or Call instructions).
-# Text. Set a comment.
-NOP. No operation. Does nothing.
-LD Rd Memory + Offset. Load memory to the destination register.
-LDI Rd Value. Load an immediate value to the destination register.
-LDRESX Rd. Load the x value of the screen resolution to the destination register.
-LDRESY Rd.</description>
+      <description>CPU 16bit processor with 8 registers, flags and a stack.&#xA;Instruction Set TAG CodeTag. Set a code tag (for Jump or Call instructions).&#xA;# Text. Set a comment.&#xA;NOP. No operation. Does nothing.&#xA;LD Rd Memory + Offset. Load memory to the destination register.&#xA;LDI Rd Value. Load an immediate value to the destination register.&#xA;LDRESX Rd. Load the x value of the screen resolution to the destination register.&#xA;LDRESY Rd. Load the y value of the screen resolution to the destination register.</description>
     </item>
   </channel>
 </rss>

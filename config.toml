@@ -5,15 +5,11 @@ title = 'Arcade Chip Emulator'
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-relearn"
 
-# For search functionality
-[outputs]
-home = ["HTML", "RSS", "SEARCH"]
-
 [[menu.shortcuts]]
-name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
-identifier = "gh"
-url = "https://github.com/markusmoenig/CHIPcade"
-weight = 1
+# name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
+# identifier = "gh"
+# url = "https://github.com/markusmoenig/CHIPcade"
+# weight = 1
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-fw fa-discord'></i> Discord"
@@ -21,10 +17,10 @@ identifier = "di"
 url = "https://discord.gg/KKteWArT"
 weight = 2
 
-[[menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bullhorn'></i> Credits"
-url = "more/credits/"
-weight = 3
+# [[menu.shortcuts]]
+# name = "<i class='fas fa-fw fa-bullhorn'></i> Credits"
+# url = "more/credits/"
+# weight = 3
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-fw fa-twitter'></i> Twitter"
@@ -41,9 +37,6 @@ alwaysopen = true
 # Useful to give opportunity to people to create merge request for your doc.
 # See the config.toml file from this documentation site to have an example.
 editURL = ""
-# Author of the site, will be used in meta information
-author = "Markus Moenig"
-description = "CHIPcade: A retro-inspired game creator that combines classic CPU and GPU emulation for crafting arcade-style experiences for the Apple ecosystem."
 # Description of the site, will be used in meta information
 # Shows a checkmark for visited pages on the menu
 showVisitedLinks = false
@@ -74,14 +67,10 @@ disableLanguageSwitchingButton = false
 disableBreadcrumb = true
 # If set to true, hide table of contents menu in the header of all pages
 disableToc = false
-# If set to false, load the MathJax module on every page regardless if a MathJax shortcode is present
-disableMathJax = false
 # Specifies the remote location of the MathJax js
 customMathJaxURL = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 # Initialization parameter for MathJax, see MathJax documentation
 mathJaxInitialize = "{}"
-# If set to false, load the Mermaid module on every page regardless if a Mermaid shortcode or Mermaid codefence is present
-disableMermaid = false
 # Specifies the remote location of the Mermaid js
 customMermaidURL = "https://unpkg.com/mermaid/dist/mermaid.min.js"
 # Initialization parameter for Mermaid, see Mermaid documentation
@@ -98,7 +87,7 @@ disableNextPrev = true
 # this can be overridden in the pages frontmatter
 ordersectionsby = "weight"
 # Change default color scheme with a variant one. Eg. can be "auto", "red", "blue", "green" or an array like [ "blue", "green" ].
-themeVariant = "auto"
+themeVariant = "my-branding"
 # Change the title separator. Default to "::".
 titleSeparator = "-"
 # If set to true, the menu in the sidebar will be displayed in a collapsible tree view. Although the functionality works with old browsers (IE11), the display of the expander icons is limited to modern browsers
@@ -110,3 +99,7 @@ additionalContentLanguage = ["en"]
 disableExplicitIndexURLs = false
 # For external links you can define how they are opened in your browser; this setting will only be applied to the content area but not the shortcut menu
 externalLinkTarget = "_blank"
+
+[params.author]
+# Author of the site, will be used in meta information
+author = "Markus Moenig"
