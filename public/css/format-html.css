@@ -49,7 +49,7 @@
 
 &:root {
     --CODE-theme: relearn-dark;
-    --PRIMARY-color: rgba(201, 213, 249, 255);
+    --PRIMARY-color: rgba(244, 244, 244, 255);
 }
 
 /* based on monokai */
