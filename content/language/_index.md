@@ -1,5 +1,5 @@
 +++
-title = "CHIPcade Assembly"
+title = "CHIPcade Script"
 alwaysopen = false
 weight = 4
 +++
