@@ -15,11 +15,18 @@
       <description>v0.1.0 (2024-11-XX) First version Started CHIPcade Development Mid 2024 Another journey begins</description>
     </item>
     <item>
-      <title>CHIPcade Script</title>
-      <link>http://localhost:1313/language/index.html</link>
+      <title>Hardware Specs</title>
+      <link>http://localhost:1313/specs/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/language/index.html</guid>
-      <description>TODO</description>
+      <guid>http://localhost:1313/specs/index.html</guid>
+      <description>CHIPcade is powered by a mighty little 16-bit processor, complete with 8 general-purpose registers, a handful of event-driven extras (R8–R11), internal flags, and a real* stack. It can read and write from Data sections (a.k.a. memory), juggle image groups for sprites, and even crank out some audio — retro-style.&#xA;Tucked inside is a dedicated Graphics Co-Processor (GCP), capable of managing 8 layers and up to 256 hardware-accelerated sprites without breaking a sweat.</description>
+    </item>
+    <item>
+      <title>CHIPcade Script</title>
+      <link>http://localhost:1313/script/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/script/index.html</guid>
+      <description>With CHIPcade Script, you can program games for the CHIPcade system. It mixes high-level structure with low-level control — like a friendly assembly language that doesn’t bite.&#xA;Code Modules Every CHIPcade game has at least two modules:&#xA;init — runs once when the game starts update — runs every frame (60 FPS by default) You can add more modules using the ➕ button in the toolbar. For example, it’s common to add a Utilities module for reusable logic.</description>
     </item>
     <item>
       <title>Tutorials</title>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware Specs - Arcade Chip Emulator</title>
+    <link>http://localhost:1313/specs/index.html</link>
+    <description>CHIPcade is powered by a mighty little 16-bit processor, complete with 8 general-purpose registers, a handful of event-driven extras (R8–R11), internal flags, and a real* stack. It can read and write from Data sections (a.k.a. memory), juggle image groups for sprites, and even crank out some audio — retro-style.&#xA;Tucked inside is a dedicated Graphics Co-Processor (GCP), capable of managing 8 layers and up to 256 hardware-accelerated sprites without breaking a sweat.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/specs/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

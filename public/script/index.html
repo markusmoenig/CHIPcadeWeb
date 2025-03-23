@@ -5,30 +5,30 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.143.1">
     <meta name="generator" content="Relearn 7.3.2+8b70bdf31acd361aacf17a0e775504551af67b83">
-    <meta name="description" content="CHIPcade is a 16-bit retro arcade chip… or at least it thinks it is.
-Program it on macOS and iPadOS to create your own classic-style games — no soldering iron required.
-Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 user input registers. Powerful graphics co-processor with 8 layers and 255 hardware sprites. CHIPcade Script — a flexible, assembly-flavored scripting language. Built-in data sections, audio support, and customizable palette. Written in Swift and Metal for native performance on Apple hardware. Created games run on macOS, iOS, and tvOS. *Okay, it’s all software. But your game won’t know the difference.">
+    <meta name="description" content="With CHIPcade Script, you can program games for the CHIPcade system. It mixes high-level structure with low-level control — like a friendly assembly language that doesn’t bite.
+Code Modules Every CHIPcade game has at least two modules:
+init — runs once when the game starts update — runs every frame (60 FPS by default) You can add more modules using the ➕ button in the toolbar. For example, it’s common to add a Utilities module for reusable logic.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="CHIPcade - Arcade Chip Emulator">
-    <meta name="twitter:description" content="CHIPcade is a 16-bit retro arcade chip… or at least it thinks it is.
-Program it on macOS and iPadOS to create your own classic-style games — no soldering iron required.
-Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 user input registers. Powerful graphics co-processor with 8 layers and 255 hardware sprites. CHIPcade Script — a flexible, assembly-flavored scripting language. Built-in data sections, audio support, and customizable palette. Written in Swift and Metal for native performance on Apple hardware. Created games run on macOS, iOS, and tvOS. *Okay, it’s all software. But your game won’t know the difference.">
-    <meta property="og:url" content="http://localhost:1313/index.html">
+    <meta name="twitter:title" content="CHIPcade Script - Arcade Chip Emulator">
+    <meta name="twitter:description" content="With CHIPcade Script, you can program games for the CHIPcade system. It mixes high-level structure with low-level control — like a friendly assembly language that doesn’t bite.
+Code Modules Every CHIPcade game has at least two modules:
+init — runs once when the game starts update — runs every frame (60 FPS by default) You can add more modules using the ➕ button in the toolbar. For example, it’s common to add a Utilities module for reusable logic.">
+    <meta property="og:url" content="http://localhost:1313/script/index.html">
     <meta property="og:site_name" content="Arcade Chip Emulator">
-    <meta property="og:title" content="CHIPcade - Arcade Chip Emulator">
-    <meta property="og:description" content="CHIPcade is a 16-bit retro arcade chip… or at least it thinks it is.
-Program it on macOS and iPadOS to create your own classic-style games — no soldering iron required.
-Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 user input registers. Powerful graphics co-processor with 8 layers and 255 hardware sprites. CHIPcade Script — a flexible, assembly-flavored scripting language. Built-in data sections, audio support, and customizable palette. Written in Swift and Metal for native performance on Apple hardware. Created games run on macOS, iOS, and tvOS. *Okay, it’s all software. But your game won’t know the difference.">
+    <meta property="og:title" content="CHIPcade Script - Arcade Chip Emulator">
+    <meta property="og:description" content="With CHIPcade Script, you can program games for the CHIPcade system. It mixes high-level structure with low-level control — like a friendly assembly language that doesn’t bite.
+Code Modules Every CHIPcade game has at least two modules:
+init — runs once when the game starts update — runs every frame (60 FPS by default) You can add more modules using the ➕ button in the toolbar. For example, it’s common to add a Utilities module for reusable logic.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content="CHIPcade - Arcade Chip Emulator">
-    <meta itemprop="description" content="CHIPcade is a 16-bit retro arcade chip… or at least it thinks it is.
-Program it on macOS and iPadOS to create your own classic-style games — no soldering iron required.
-Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 user input registers. Powerful graphics co-processor with 8 layers and 255 hardware sprites. CHIPcade Script — a flexible, assembly-flavored scripting language. Built-in data sections, audio support, and customizable palette. Written in Swift and Metal for native performance on Apple hardware. Created games run on macOS, iOS, and tvOS. *Okay, it’s all software. But your game won’t know the difference.">
-    <meta itemprop="wordCount" content="112">
-    <title>CHIPcade - Arcade Chip Emulator</title>
-    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="CHIPcade - Arcade Chip Emulator">
+    <meta itemprop="name" content="CHIPcade Script - Arcade Chip Emulator">
+    <meta itemprop="description" content="With CHIPcade Script, you can program games for the CHIPcade system. It mixes high-level structure with low-level control — like a friendly assembly language that doesn’t bite.
+Code Modules Every CHIPcade game has at least two modules:
+init — runs once when the game starts update — runs every frame (60 FPS by default) You can add more modules using the ➕ button in the toolbar. For example, it’s common to add a Utilities module for reusable logic.">
+    <meta itemprop="wordCount" content="702">
+    <title>CHIPcade Script - Arcade Chip Emulator</title>
+    <link href="/script/index.xml" rel="alternate" type="application/rss+xml" title="CHIPcade Script - Arcade Chip Emulator">
     <link href="/images/favicon.png?1742718325" rel="icon" type="image/png">
     <link href="/css/fontawesome-all.min.css?1742718325" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1742718325" rel="stylesheet"></noscript>
     <link href="/css/auto-complete.css?1742718325" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1742718325" rel="stylesheet"></noscript>
@@ -37,8 +37,8 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
     <link href="/css/format-html.css?1742718325" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.relBasePath='.';
-      window.relearn.relBaseUri='.';
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.min = ``;
       window.relearn.disableAnchorCopy=false;
@@ -85,7 +85,7 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css">
     
   </head>
-  <body class="mobile-support html" data-url="/index.html">
+  <body class="mobile-support html" data-url="/script/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -99,11 +99,26 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#code-modules">Code Modules</a></li>
+    <li><a href="#reading--writing-to-registers">Reading / Writing to Registers</a></li>
+    <li><a href="#arithmetic">Arithmetic</a></li>
+    <li><a href="#expressions">Expressions</a>
       <ul>
-        <li><a href="#features">Features</a></li>
+        <li><a href="#boolean-values">Boolean Values</a></li>
+        <li><a href="#logical-operators">Logical Operators</a></li>
+        <li><a href="#comparisons">Comparisons</a></li>
       </ul>
     </li>
+    <li><a href="#data-modules-and-state">Data Modules and State</a></li>
+    <li><a href="#tags">Tags</a></li>
+    <li><a href="#code-flow">Code Flow</a>
+      <ul>
+        <li><a href="#if-statements">If statements</a></li>
+        <li><a href="#jumpif-and-loops">jumpif and Loops</a></li>
+      </ul>
+    </li>
+    <li><a href="#notify-and-notifyr7">notify and notifyR7</a></li>
+    <li><a href="#available-functions">Available Functions</a></li>
   </ul>
 </nav>
                 </div>
@@ -111,7 +126,7 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
             </div>
           </div>
           <span class="topbar-breadcrumbs highlightable">
-            CHIPcade
+            CHIPcade Script
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
@@ -126,27 +141,158 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
         </div>
       </nav>
       <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable page" tabindex="-1">
+      <main id="R-body-inner" class="highlightable script" tabindex="-1">
         <div class="flex-block-wrapper">
 <article class="default">
   <header class="headline">
   </header>
 
-<h1 id="chipcade">CHIPcade</h1>
+<h1 id="chipcade-script">CHIPcade Script</h1>
 
-<p><strong>CHIPcade</strong> is a 16-bit retro arcade chip&hellip; or at least it thinks it is.</p>
-<p>Program it on macOS and iPadOS to create your own classic-style games — no soldering iron required.</p>
-<h3 id="features">Features</h3>
+<p>With <strong>CHIPcade Script</strong>, you can program games for the CHIPcade system. It mixes high-level structure with low-level control — like a friendly assembly language that doesn&rsquo;t bite.</p>
+<hr>
+<h2 id="code-modules">Code Modules</h2>
+<p>Every CHIPcade game has at least two modules:</p>
 <ul>
-<li>Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 user input registers.</li>
-<li>Powerful graphics co-processor with 8 layers and 255 hardware sprites.</li>
-<li>CHIPcade Script — a flexible, assembly-flavored scripting language.</li>
-<li>Built-in data sections, audio support, and customizable palette.</li>
-<li>Written in Swift and Metal for native performance on Apple hardware.</li>
-<li>Created games run on macOS, iOS, and tvOS.</li>
+<li><code>init</code> — runs once when the game starts</li>
+<li><code>update</code> — runs every frame (60 FPS by default)</li>
 </ul>
-<p>*Okay, it&rsquo;s all software. But your game won&rsquo;t know the difference.</p>
-<p><strong>Coming soon</strong> to the macOS App Store and iPad App Store.</p>
+<p>You can add more modules using the ➕ button in the toolbar. For example, it&rsquo;s common to add a <code>Utilities</code> module for reusable logic.</p>
+<p>CHIPcade includes built-in functions for basic math and a <strong>Math library</strong> for more advanced operations.</p>
+<hr>
+<h2 id="reading--writing-to-registers">Reading / Writing to Registers</h2>
+<p>CHIPcade uses 8 general-purpose registers: <code>R0</code> through <code>R7</code>. You can read and write to them directly or dynamically using indexed access.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade">R3 = R4 + R5
+R[3 + 3] = R[4] + R[5]
+r[2] = sin(R7) * 0.5</code></pre></div>
+<p>Both <code>R</code> and <code>r</code> work, but uppercase is preferred for clarity.
+There are <strong>no variables</strong> — just registers and <code>Data</code>.</p>
+<h2 id="arithmetic">Arithmetic</h2>
+<p>CHIPcade supports all basic arithmetic operations:</p>
+<ul>
+<li>Addition (<code>+</code>)</li>
+<li>Subtraction (<code>-</code>)</li>
+<li>Multiplication (<code>*</code>)</li>
+<li>Division (<code>/</code>)</li>
+<li>Modulo (<code>%</code>)</li>
+</ul>
+<p>These operators can also be used in assignment form:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade">R3 += R4
+R3 -= R4
+R3 *= R4
+R3 /= R4
+R3 %= R4</code></pre></div>
+<p>You can freely combine operations and use data or register values.
+Floating point, signed, and unsigned types are all supported — CHIPcade handles type casting automatically.</p>
+<h2 id="expressions">Expressions</h2>
+<p>CHIPcade Script supports full expressions, including math, comparisons, and logic. You can freely combine values, registers, and functions.</p>
+<h3 id="boolean-values">Boolean Values</h3>
+<ul>
+<li><code>true</code> and <code>false</code> are valid constants</li>
+<li>Expressions can return a boolean result — useful in <code>if</code> and <code>jumpif</code></li>
+</ul>
+<h3 id="logical-operators">Logical Operators</h3>
+<ul>
+<li><code>and</code> — Logical AND</li>
+<li><code>or</code> — Logical OR</li>
+<li><code>!</code> — Logical NOT (prefix)</li>
+</ul>
+<p><strong>Note:</strong> <code>not</code> is <strong>not supported</strong> — use <code>!</code> instead.</p>
+<p>Example:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade">    if R0 &gt; 0 and R1 &lt; 10
+        R2 = 1
+
+    if !(R3 == 5)
+        R2 = 0</code></pre></div>
+<h3 id="comparisons">Comparisons</h3>
+<p>You can use standard comparison operators:</p>
+<ul>
+<li><code>==</code> — equal</li>
+<li><code>!=</code> — not equal</li>
+<li><code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code></li>
+</ul>
+<p>Example:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade">    jumpif R0 == 10 or R1 &gt; 5 ? Skip</code></pre></div>
+<p>Expressions are evaluated left to right with standard precedence. Use parentheses to group if needed.</p>
+<hr>
+<h2 id="data-modules-and-state">Data Modules and State</h2>
+<p>You can add <strong>Data modules</strong> via the ➕ button in the toolbar. Each module contains 1024 16-bit values.</p>
+<p>You can access them by name and index:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade">R0 = Data[0]
+Data[R3] = 42.0</code></pre></div>
+<ul>
+<li>Valid index range: <code>0–1023</code></li>
+<li>Out-of-range accesses are safely ignored at runtime</li>
+<li>On creation, all values are initialized to <code>0</code></li>
+<li><strong>Data is persistent</strong> — values are preserved between runs</li>
+<li>If you need to reset state, do it in the <code>init</code> module</li>
+<li>You can also edit Data module values directly in the editor</li>
+</ul>
+<p>Because <strong>Data is persistent</strong>, your game state is automatically saved — no extra save/load logic required.</p>
+<hr>
+<h2 id="tags">Tags</h2>
+<p>Tags let you label blocks of code and call them by name — like subroutines with <code>goto</code> and <code>return</code>.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade">DrawHighScore:
+drawText(10, 10, &#34;High Score:&#34; + 5, 13)
+return</code></pre></div>
+<p>Calling a tag:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade">goto DrawHighScore
+# Or, if it&#39;s in another module:
+goto Utlities.DrawHighScore</code></pre></div>
+<p><code>goto</code> pushes the return address to the stack, and <code>return</code> pops it.</p>
+<hr>
+<h2 id="code-flow">Code Flow</h2>
+<p>CHIPcade executes code <strong>top to bottom</strong> in each module — just like a good old BASIC listing. You can control flow with <code>if</code>, <code>goto</code>, <code>jumpif</code>, and loops.</p>
+<h3 id="if-statements">If statements</h3>
+<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade">if R0 &gt; 0
+    R1 = 1
+else
+    R1 = 0</code></pre></div>
+<p>No parentheses, no colons — just clean and readable.</p>
+<hr>
+<h3 id="jumpif-and-loops">jumpif and Loops</h3>
+<p>Use <code>jumpif</code> for manual loops:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade"># Set all 1024 values of Data to 0
+R0 = 0
+loop:
+    Data[R0] = 0u
+    R0 += 1
+jumpif R0 &lt; 1024 ? loop</code></pre></div>
+<p><code>jumpif</code> jumps to the given label if the condition is true.</p>
+<p>To avoid infinite loops, <code>jumpif</code> automatically breaks after 1000 invocations.</p>
+<hr>
+<h2 id="notify-and-notifyr7">notify and notifyR7</h2>
+<p>Schedule code execution in the future — handy for timed events:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade"># Call DrawHighScore after 1 second
+notify(&#34;DrawHighScore&#34;, 1.0)
+
+# Call DisableSprite after 1 second and pass a value to R7
+notifyR7(&#34;DisableSprite&#34;, 1.0, R2)
+
+DisableSprite:
+sprite[R7].active = false</code></pre></div>
+<p>Think of it like retro timers with built-in callbacks.</p>
+<hr>
+<h2 id="available-functions">Available Functions</h2>
+<p>CHIPcade Script includes built-in math functions for handling common calculations:</p>
+<ul>
+<li>
+<p><code>sin(value)</code>
+Returns the sine of a value (in radians).</p>
+</li>
+<li>
+<p><code>cos(value)</code>
+Returns the cosine of a value (in radians).</p>
+</li>
+<li>
+<p><code>degrees(value)</code>
+Converts radians to degrees.</p>
+</li>
+<li>
+<p><code>radians(value)</code>
+Converts degrees to radians.</p>
+</li>
+</ul>
 
   <footer class="footline">
   </footer>
@@ -197,7 +343,9 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
           <ul class="enlarge morespace collapsible-menu">
             <li class="" data-nav-id="/news/index.html"><a class="padding" href="/news/index.html">News</a></li>
             <li class="" data-nav-id="/specs/index.html"><a class="padding" href="/specs/index.html">Hardware Specs</a></li>
-            <li class="" data-nav-id="/script/index.html"><a class="padding" href="/script/index.html">CHIPcade Script</a><ul id="R-subsections-ffc9b46f6bf4216af738686c36474de0" class="collapsible-menu"></ul></li>
+            <li class="active parent " data-nav-id="/script/index.html"><a class="padding" href="/script/index.html">CHIPcade Script</a><ul id="R-subsections-ffc9b46f6bf4216af738686c36474de0" class="collapsible-menu">
+            <li class="" data-nav-id="/script/layers/index.html"><a class="padding" href="/script/layers/index.html">Layers</a></li>
+            <li class="" data-nav-id="/script/sprites/index.html"><a class="padding" href="/script/sprites/index.html">Sprites</a></li></ul></li>
             <li class="" data-nav-id="/tutorials/index.html"><a class="padding" href="/tutorials/index.html">Tutorials</a></li>
           </ul>
         </div>
@@ -220,7 +368,7 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-language">Language</label>
                     <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
-                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/index.html" lang="en-us" selected></option>
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/script/index.html" lang="en-us" selected></option>
                     </select>
                   </div>
                   <div class="clear"></div>

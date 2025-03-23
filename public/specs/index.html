@@ -5,30 +5,26 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.143.1">
     <meta name="generator" content="Relearn 7.3.2+8b70bdf31acd361aacf17a0e775504551af67b83">
-    <meta name="description" content="CHIPcade is a 16-bit retro arcade chip… or at least it thinks it is.
-Program it on macOS and iPadOS to create your own classic-style games — no soldering iron required.
-Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 user input registers. Powerful graphics co-processor with 8 layers and 255 hardware sprites. CHIPcade Script — a flexible, assembly-flavored scripting language. Built-in data sections, audio support, and customizable palette. Written in Swift and Metal for native performance on Apple hardware. Created games run on macOS, iOS, and tvOS. *Okay, it’s all software. But your game won’t know the difference.">
+    <meta name="description" content="CHIPcade is powered by a mighty little 16-bit processor, complete with 8 general-purpose registers, a handful of event-driven extras (R8–R11), internal flags, and a real* stack. It can read and write from Data sections (a.k.a. memory), juggle image groups for sprites, and even crank out some audio — retro-style.
+Tucked inside is a dedicated Graphics Co-Processor (GCP), capable of managing 8 layers and up to 256 hardware-accelerated sprites without breaking a sweat.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="CHIPcade - Arcade Chip Emulator">
-    <meta name="twitter:description" content="CHIPcade is a 16-bit retro arcade chip… or at least it thinks it is.
-Program it on macOS and iPadOS to create your own classic-style games — no soldering iron required.
-Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 user input registers. Powerful graphics co-processor with 8 layers and 255 hardware sprites. CHIPcade Script — a flexible, assembly-flavored scripting language. Built-in data sections, audio support, and customizable palette. Written in Swift and Metal for native performance on Apple hardware. Created games run on macOS, iOS, and tvOS. *Okay, it’s all software. But your game won’t know the difference.">
-    <meta property="og:url" content="http://localhost:1313/index.html">
+    <meta name="twitter:title" content="Hardware Specs - Arcade Chip Emulator">
+    <meta name="twitter:description" content="CHIPcade is powered by a mighty little 16-bit processor, complete with 8 general-purpose registers, a handful of event-driven extras (R8–R11), internal flags, and a real* stack. It can read and write from Data sections (a.k.a. memory), juggle image groups for sprites, and even crank out some audio — retro-style.
+Tucked inside is a dedicated Graphics Co-Processor (GCP), capable of managing 8 layers and up to 256 hardware-accelerated sprites without breaking a sweat.">
+    <meta property="og:url" content="http://localhost:1313/specs/index.html">
     <meta property="og:site_name" content="Arcade Chip Emulator">
-    <meta property="og:title" content="CHIPcade - Arcade Chip Emulator">
-    <meta property="og:description" content="CHIPcade is a 16-bit retro arcade chip… or at least it thinks it is.
-Program it on macOS and iPadOS to create your own classic-style games — no soldering iron required.
-Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 user input registers. Powerful graphics co-processor with 8 layers and 255 hardware sprites. CHIPcade Script — a flexible, assembly-flavored scripting language. Built-in data sections, audio support, and customizable palette. Written in Swift and Metal for native performance on Apple hardware. Created games run on macOS, iOS, and tvOS. *Okay, it’s all software. But your game won’t know the difference.">
+    <meta property="og:title" content="Hardware Specs - Arcade Chip Emulator">
+    <meta property="og:description" content="CHIPcade is powered by a mighty little 16-bit processor, complete with 8 general-purpose registers, a handful of event-driven extras (R8–R11), internal flags, and a real* stack. It can read and write from Data sections (a.k.a. memory), juggle image groups for sprites, and even crank out some audio — retro-style.
+Tucked inside is a dedicated Graphics Co-Processor (GCP), capable of managing 8 layers and up to 256 hardware-accelerated sprites without breaking a sweat.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content="CHIPcade - Arcade Chip Emulator">
-    <meta itemprop="description" content="CHIPcade is a 16-bit retro arcade chip… or at least it thinks it is.
-Program it on macOS and iPadOS to create your own classic-style games — no soldering iron required.
-Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 user input registers. Powerful graphics co-processor with 8 layers and 255 hardware sprites. CHIPcade Script — a flexible, assembly-flavored scripting language. Built-in data sections, audio support, and customizable palette. Written in Swift and Metal for native performance on Apple hardware. Created games run on macOS, iOS, and tvOS. *Okay, it’s all software. But your game won’t know the difference.">
-    <meta itemprop="wordCount" content="112">
-    <title>CHIPcade - Arcade Chip Emulator</title>
-    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="CHIPcade - Arcade Chip Emulator">
+    <meta itemprop="name" content="Hardware Specs - Arcade Chip Emulator">
+    <meta itemprop="description" content="CHIPcade is powered by a mighty little 16-bit processor, complete with 8 general-purpose registers, a handful of event-driven extras (R8–R11), internal flags, and a real* stack. It can read and write from Data sections (a.k.a. memory), juggle image groups for sprites, and even crank out some audio — retro-style.
+Tucked inside is a dedicated Graphics Co-Processor (GCP), capable of managing 8 layers and up to 256 hardware-accelerated sprites without breaking a sweat.">
+    <meta itemprop="wordCount" content="681">
+    <title>Hardware Specs - Arcade Chip Emulator</title>
+    <link href="/specs/index.xml" rel="alternate" type="application/rss+xml" title="Hardware Specs - Arcade Chip Emulator">
     <link href="/images/favicon.png?1742718325" rel="icon" type="image/png">
     <link href="/css/fontawesome-all.min.css?1742718325" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1742718325" rel="stylesheet"></noscript>
     <link href="/css/auto-complete.css?1742718325" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1742718325" rel="stylesheet"></noscript>
@@ -37,8 +33,8 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
     <link href="/css/format-html.css?1742718325" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.relBasePath='.';
-      window.relearn.relBaseUri='.';
+      window.relearn.relBasePath='..';
+      window.relearn.relBaseUri='..';
       window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.min = ``;
       window.relearn.disableAnchorCopy=false;
@@ -85,7 +81,7 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css">
     
   </head>
-  <body class="mobile-support html" data-url="/index.html">
+  <body class="mobile-support html" data-url="/specs/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -99,11 +95,12 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#features">Features</a></li>
-      </ul>
-    </li>
+    <li><a href="#registers">Registers</a></li>
+    <li><a href="#16-bit-values">16-bit Values</a></li>
+    <li><a href="#data-sections">Data Sections</a></li>
+    <li><a href="#image-groups">Image Groups</a></li>
+    <li><a href="#audio">Audio</a></li>
+    <li><a href="#palette">Palette</a></li>
   </ul>
 </nav>
                 </div>
@@ -111,7 +108,7 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
             </div>
           </div>
           <span class="topbar-breadcrumbs highlightable">
-            CHIPcade
+            Hardware Specs
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
@@ -126,27 +123,88 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
         </div>
       </nav>
       <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable page" tabindex="-1">
+      <main id="R-body-inner" class="highlightable specs" tabindex="-1">
         <div class="flex-block-wrapper">
 <article class="default">
   <header class="headline">
   </header>
 
-<h1 id="chipcade">CHIPcade</h1>
+<h1 id="hardware-specs">Hardware Specs</h1>
 
-<p><strong>CHIPcade</strong> is a 16-bit retro arcade chip&hellip; or at least it thinks it is.</p>
-<p>Program it on macOS and iPadOS to create your own classic-style games — no soldering iron required.</p>
-<h3 id="features">Features</h3>
+<p>CHIPcade is powered by a mighty little 16-bit processor, complete with 8 general-purpose registers, a handful of event-driven extras (R8–R11), internal flags, and a real* stack. It can read and write from Data sections (a.k.a. memory), juggle image groups for sprites, and even crank out some audio — retro-style.</p>
+<p>Tucked inside is a dedicated Graphics Co-Processor (GCP), capable of managing 8 layers and up to 256 hardware-accelerated sprites without breaking a sweat.</p>
+<p>*Okay, still software. But the stack is very real to CHIPcade.</p>
+<hr>
+<h2 id="registers">Registers</h2>
+<p>R0–R7 are your general-purpose registers — store numbers, do math, control logic, or just hoard values like a digital dragon.</p>
+<p>R8–R11 are special input/event registers wired directly to the user:</p>
 <ul>
-<li>Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 user input registers.</li>
-<li>Powerful graphics co-processor with 8 layers and 255 hardware sprites.</li>
-<li>CHIPcade Script — a flexible, assembly-flavored scripting language.</li>
-<li>Built-in data sections, audio support, and customizable palette.</li>
-<li>Written in Swift and Metal for native performance on Apple hardware.</li>
-<li>Created games run on macOS, iOS, and tvOS.</li>
+<li><strong>R8</strong> – Keycode of the currently pressed key</li>
+<li><strong>R9</strong> – Input state: <code>0</code> for up, <code>1</code> for down</li>
+<li><strong>R10</strong> – X coordinate of the input (touch/mouse)</li>
+<li><strong>R11</strong> – Y coordinate of the input</li>
 </ul>
-<p>*Okay, it&rsquo;s all software. But your game won&rsquo;t know the difference.</p>
-<p><strong>Coming soon</strong> to the macOS App Store and iPad App Store.</p>
+<p>These are mostly read-only, but you can write to R8 to clear the key state and move on.</p>
+<p>You’ll see all register values live in the visual CHIPcade Debugger — no hex-hacking needed.</p>
+<hr>
+<h2 id="16-bit-values">16-bit Values</h2>
+<p>Everything in CHIPcade — registers, memory, data — is a 16-bit value. But those 16 bits are surprisingly versatile:</p>
+<ul>
+<li><strong>Unsigned</strong> – Positive integers, written like <code>10u</code></li>
+<li><strong>Signed</strong> – Can go negative, written like <code>-2s</code></li>
+<li><strong>Float</strong> – Fractions and decimals, written like <code>0.02f</code></li>
+<li><strong>Unicode</strong> – Characters, like <code>&quot;A&quot;</code> or <code>'✓'</code></li>
+</ul>
+<p>CHIPcade may live in a pixelated past, but its data types are surprisingly flexible.</p>
+<hr>
+<h2 id="data-sections">Data Sections</h2>
+<p>Need memory? CHIPcade gives you as many <strong>Data sections</strong> as you want — each one holding <strong>1024 16-bit values</strong>. Plenty of room to stash scores, states, secrets, and whatever else your game dreams up.</p>
+<p>You can create new data sections (and rename them) using the ➕ button in the toolbar.</p>
+<p>Access them directly from CHIPcade Script by name:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade">Data[0] = 10u        # Store an unsigned value
+Data[R0] = -2s       # Use a register as an index
+Data[2] = R4 - 0.02f # Store the result of a float calculation
+Data[3] = &#34;A&#34;        # Store a character</code></pre></div>
+<p>They’re simple, fast, and ready to abuse like it’s 1985.</p>
+<hr>
+<h2 id="image-groups">Image Groups</h2>
+<p>Need art? CHIPcade uses <strong>Image Groups</strong> to organize all your visuals — from single sprites to full-on tilesets.</p>
+<p>Create and rename image groups using the ➕ button in the toolbar. Then add images (or entire tilesets) with a click. You can drag and drop images to reorder them — the index matters!</p>
+<p>Images are stored in the group’s memory and accessed by index:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade"># Assign a static image to sprite 0
+sprite[0].imageGroup = &#34;Background&#34;
+sprite[0].imageIndex = 0
+
+# Assign an animation range to sprite 1 at 10 fps
+sprite[1].imageGroup = &#34;Ship&#34;
+sprite[1].animationFrom = 0
+sprite[1].animationTo = 3
+sprite[1].fps = 10</code></pre></div>
+<p>Want pixel-perfect control? CHIPcade’s got your back — one frame at a time.</p>
+<hr>
+<h2 id="audio">Audio</h2>
+<p>Sound effects and music are handled through <strong>Audio Clips</strong> — short, individual audio files you can assign to events, buttons, lasers, explosions&hellip; you get the idea.</p>
+<p>Create and rename audio clips using the ➕ button in the toolbar. Then import your sounds using the import button. Each clip is stored individually and accessed by name.</p>
+<hr>
+<h2 id="palette">Palette</h2>
+<p>CHIPcade comes with a built-in <strong>Palette</strong> supporting up to <strong>256 colors</strong> — enough to cover everything from moody dungeon hues to neon space explosions.</p>
+<p>You can edit colors freely to match your game’s vibe. Colors are accessed by index, especially when drawing text:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade"># Draws text at position (10, 10)  and palette index 13
+drawText(10, 10, &#34;Hello, World!&#34;, 13)</code></pre></div>
+<p>Want it grayscale? Pastel? Full vaporwave? The palette is yours to command.</p>
+<h1 id="graphical-co-processor">Graphical Co-Processor</h1>
+<p>CHIPcade’s <strong>Graphics Co-Processor (GCP)</strong> handles all the heavy lifting for visuals — fast, flexible, and ready to blast pixels like it&rsquo;s 1992.</p>
+<ul>
+<li>
+<p>Supports up to <strong>8 layers</strong> of graphics.
+Each layer can match the screen resolution or use a custom size for cool parallax and UI tricks.</p>
+</li>
+<li>
+<p>Includes <strong>256 hardware-accelerated sprites</strong>.
+Place them anywhere on screen or attach them to layers. Animate them, rotate them, make them explode — it’s all programmable.</p>
+</li>
+</ul>
+<p>For full control and examples, check out the <a href="/script/index.html">CHIPcade Script documentation</a>.</p>
 
   <footer class="footline">
   </footer>
@@ -196,7 +254,7 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
         <div id="R-shortcutmenu-home" class="R-sidebarmenu">
           <ul class="enlarge morespace collapsible-menu">
             <li class="" data-nav-id="/news/index.html"><a class="padding" href="/news/index.html">News</a></li>
-            <li class="" data-nav-id="/specs/index.html"><a class="padding" href="/specs/index.html">Hardware Specs</a></li>
+            <li class="active " data-nav-id="/specs/index.html"><a class="padding" href="/specs/index.html">Hardware Specs</a></li>
             <li class="" data-nav-id="/script/index.html"><a class="padding" href="/script/index.html">CHIPcade Script</a><ul id="R-subsections-ffc9b46f6bf4216af738686c36474de0" class="collapsible-menu"></ul></li>
             <li class="" data-nav-id="/tutorials/index.html"><a class="padding" href="/tutorials/index.html">Tutorials</a></li>
           </ul>
@@ -220,7 +278,7 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-language">Language</label>
                     <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
-                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/index.html" lang="en-us" selected></option>
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/specs/index.html" lang="en-us" selected></option>
                     </select>
                   </div>
                   <div class="clear"></div>

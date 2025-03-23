@@ -39,6 +39,7 @@
     {{- partial "stylesheet.html" . }}
     {{- partial "dependencies.gotmpl" (dict "page" . "location" "header") }}
     {{- partial "custom-header.html" . }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css">
     <!-- Google tag (gtag.js) -->
   </head>
   <body class="mobile-support {{ with .Store.Get "relearnOutputFormat" }}{{ . }}{{ else }}html{{ end }}{{- if .Site.Params.disableInlineCopyToClipBoard }} disableInlineCopyToClipboard{{ end }}{{- if .Site.Params.disableHoverBlockCopyToClipBoard }} disableHoverBlockCopyToClipBoard{{ end }}" data-url="{{ partial "permalink.gotmpl" (dict "to" .) }}">
@@ -80,5 +81,10 @@
 {{- partial "dependencies.gotmpl" (dict "page" . "location" "footer") }}
     <script src="{{"js/theme.js" | relURL}}{{ $assetBusting }}" defer></script>
 {{- partial "custom-footer.html" . }}
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-clike.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>
+<!-- Add your custom language below -->
+<script src="/js/prism-chipcade.js"></script>
   </body>
 </html>

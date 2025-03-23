@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/language/layers/index.html</loc>
+    <loc>http://localhost:1313/script/layers/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/news/index.html</loc>
+    <loc>http://localhost:1313/script/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/language/sprites/index.html</loc>
+    <loc>http://localhost:1313/script/sprites/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/language/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>http://localhost:1313/language/index.html</loc>
+    <loc>http://localhost:1313/specs/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/tutorials/index.html</loc>
@@ -26,6 +23,9 @@
   </url>
   <url>
     <loc>http://localhost:1313/more/credits/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/news/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/tags/index.html</loc>

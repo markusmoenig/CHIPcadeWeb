@@ -5,30 +5,30 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.143.1">
     <meta name="generator" content="Relearn 7.3.2+8b70bdf31acd361aacf17a0e775504551af67b83">
-    <meta name="description" content="CHIPcade is a 16-bit retro arcade chip… or at least it thinks it is.
-Program it on macOS and iPadOS to create your own classic-style games — no soldering iron required.
-Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 user input registers. Powerful graphics co-processor with 8 layers and 255 hardware sprites. CHIPcade Script — a flexible, assembly-flavored scripting language. Built-in data sections, audio support, and customizable palette. Written in Swift and Metal for native performance on Apple hardware. Created games run on macOS, iOS, and tvOS. *Okay, it’s all software. But your game won’t know the difference.">
+    <meta name="description" content="Sprites CHIPcade supports up to 255 hardware-accelerated sprites. You can access them via:
+sprite[0].scale = 0.5 s[1].imageGroup = &#34;Bullet&#34; sprite[R2].layerIndex = 1 Just like layers and registers, sprite indices can be hardcoded or dynamically computed.
+Default Behavior Sprites are inactive by default — you must set active = true to make them visible By default, sprites are not assigned to any layer and are rendered on top of all layers Sprites can be animated, moved, rotated, and participate in collisions Sprite Properties Basic x, y Position of the sprite on screen (in pixels)">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="CHIPcade - Arcade Chip Emulator">
-    <meta name="twitter:description" content="CHIPcade is a 16-bit retro arcade chip… or at least it thinks it is.
-Program it on macOS and iPadOS to create your own classic-style games — no soldering iron required.
-Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 user input registers. Powerful graphics co-processor with 8 layers and 255 hardware sprites. CHIPcade Script — a flexible, assembly-flavored scripting language. Built-in data sections, audio support, and customizable palette. Written in Swift and Metal for native performance on Apple hardware. Created games run on macOS, iOS, and tvOS. *Okay, it’s all software. But your game won’t know the difference.">
-    <meta property="og:url" content="http://localhost:1313/index.html">
+    <meta name="twitter:title" content="Sprites - Arcade Chip Emulator">
+    <meta name="twitter:description" content="Sprites CHIPcade supports up to 255 hardware-accelerated sprites. You can access them via:
+sprite[0].scale = 0.5 s[1].imageGroup = &#34;Bullet&#34; sprite[R2].layerIndex = 1 Just like layers and registers, sprite indices can be hardcoded or dynamically computed.
+Default Behavior Sprites are inactive by default — you must set active = true to make them visible By default, sprites are not assigned to any layer and are rendered on top of all layers Sprites can be animated, moved, rotated, and participate in collisions Sprite Properties Basic x, y Position of the sprite on screen (in pixels)">
+    <meta property="og:url" content="http://localhost:1313/script/sprites/index.html">
     <meta property="og:site_name" content="Arcade Chip Emulator">
-    <meta property="og:title" content="CHIPcade - Arcade Chip Emulator">
-    <meta property="og:description" content="CHIPcade is a 16-bit retro arcade chip… or at least it thinks it is.
-Program it on macOS and iPadOS to create your own classic-style games — no soldering iron required.
-Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 user input registers. Powerful graphics co-processor with 8 layers and 255 hardware sprites. CHIPcade Script — a flexible, assembly-flavored scripting language. Built-in data sections, audio support, and customizable palette. Written in Swift and Metal for native performance on Apple hardware. Created games run on macOS, iOS, and tvOS. *Okay, it’s all software. But your game won’t know the difference.">
+    <meta property="og:title" content="Sprites - Arcade Chip Emulator">
+    <meta property="og:description" content="Sprites CHIPcade supports up to 255 hardware-accelerated sprites. You can access them via:
+sprite[0].scale = 0.5 s[1].imageGroup = &#34;Bullet&#34; sprite[R2].layerIndex = 1 Just like layers and registers, sprite indices can be hardcoded or dynamically computed.
+Default Behavior Sprites are inactive by default — you must set active = true to make them visible By default, sprites are not assigned to any layer and are rendered on top of all layers Sprites can be animated, moved, rotated, and participate in collisions Sprite Properties Basic x, y Position of the sprite on screen (in pixels)">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content="CHIPcade - Arcade Chip Emulator">
-    <meta itemprop="description" content="CHIPcade is a 16-bit retro arcade chip… or at least it thinks it is.
-Program it on macOS and iPadOS to create your own classic-style games — no soldering iron required.
-Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 user input registers. Powerful graphics co-processor with 8 layers and 255 hardware sprites. CHIPcade Script — a flexible, assembly-flavored scripting language. Built-in data sections, audio support, and customizable palette. Written in Swift and Metal for native performance on Apple hardware. Created games run on macOS, iOS, and tvOS. *Okay, it’s all software. But your game won’t know the difference.">
-    <meta itemprop="wordCount" content="112">
-    <title>CHIPcade - Arcade Chip Emulator</title>
-    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="CHIPcade - Arcade Chip Emulator">
+    <meta itemprop="name" content="Sprites - Arcade Chip Emulator">
+    <meta itemprop="description" content="Sprites CHIPcade supports up to 255 hardware-accelerated sprites. You can access them via:
+sprite[0].scale = 0.5 s[1].imageGroup = &#34;Bullet&#34; sprite[R2].layerIndex = 1 Just like layers and registers, sprite indices can be hardcoded or dynamically computed.
+Default Behavior Sprites are inactive by default — you must set active = true to make them visible By default, sprites are not assigned to any layer and are rendered on top of all layers Sprites can be animated, moved, rotated, and participate in collisions Sprite Properties Basic x, y Position of the sprite on screen (in pixels)">
+    <meta itemprop="wordCount" content="389">
+    <title>Sprites - Arcade Chip Emulator</title>
+    <link href="/script/sprites/index.xml" rel="alternate" type="application/rss+xml" title="Sprites - Arcade Chip Emulator">
     <link href="/images/favicon.png?1742718325" rel="icon" type="image/png">
     <link href="/css/fontawesome-all.min.css?1742718325" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1742718325" rel="stylesheet"></noscript>
     <link href="/css/auto-complete.css?1742718325" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1742718325" rel="stylesheet"></noscript>
@@ -37,8 +37,8 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
     <link href="/css/format-html.css?1742718325" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.relBasePath='.';
-      window.relearn.relBaseUri='.';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
       window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.min = ``;
       window.relearn.disableAnchorCopy=false;
@@ -85,7 +85,7 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css">
     
   </head>
-  <body class="mobile-support html" data-url="/index.html">
+  <body class="mobile-support html" data-url="/script/sprites/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -99,9 +99,19 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#sprites">Sprites</a></li>
+    <li><a href="#default-behavior">Default Behavior</a></li>
+    <li><a href="#sprite-properties">Sprite Properties</a>
       <ul>
-        <li><a href="#features">Features</a></li>
+        <li><a href="#basic">Basic</a></li>
+        <li><a href="#animation">Animation</a></li>
+        <li><a href="#transform--appearance">Transform &amp; Appearance</a></li>
+        <li><a href="#movement">Movement</a></li>
+      </ul>
+    </li>
+    <li><a href="#sprite-functions">Sprite Functions</a>
+      <ul>
+        <li><a href="#example">Example</a></li>
       </ul>
     </li>
   </ul>
@@ -111,7 +121,7 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
             </div>
           </div>
           <span class="topbar-breadcrumbs highlightable">
-            CHIPcade
+            Sprites
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
@@ -126,27 +136,149 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
         </div>
       </nav>
       <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable page" tabindex="-1">
+      <main id="R-body-inner" class="highlightable script" tabindex="-1">
         <div class="flex-block-wrapper">
 <article class="default">
   <header class="headline">
   </header>
 
-<h1 id="chipcade">CHIPcade</h1>
+<h1 id="sprites">Sprites</h1>
 
-<p><strong>CHIPcade</strong> is a 16-bit retro arcade chip&hellip; or at least it thinks it is.</p>
-<p>Program it on macOS and iPadOS to create your own classic-style games — no soldering iron required.</p>
-<h3 id="features">Features</h3>
+<h2 id="sprites">Sprites</h2>
+<p>CHIPcade supports up to <strong>255 hardware-accelerated sprites</strong>. You can access them via:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade">    sprite[0].scale = 0.5
+    s[1].imageGroup = &#34;Bullet&#34;
+    sprite[R2].layerIndex = 1</code></pre></div>
+<p>Just like layers and registers, sprite indices can be hardcoded or dynamically computed.</p>
+<hr>
+<h2 id="default-behavior">Default Behavior</h2>
 <ul>
-<li>Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 user input registers.</li>
-<li>Powerful graphics co-processor with 8 layers and 255 hardware sprites.</li>
-<li>CHIPcade Script — a flexible, assembly-flavored scripting language.</li>
-<li>Built-in data sections, audio support, and customizable palette.</li>
-<li>Written in Swift and Metal for native performance on Apple hardware.</li>
-<li>Created games run on macOS, iOS, and tvOS.</li>
+<li>Sprites are <strong>inactive by default</strong> — you must set <code>active = true</code> to make them visible</li>
+<li>By default, sprites are <strong>not assigned to any layer</strong> and are rendered <strong>on top of all layers</strong></li>
+<li>Sprites can be animated, moved, rotated, and participate in collisions</li>
 </ul>
-<p>*Okay, it&rsquo;s all software. But your game won&rsquo;t know the difference.</p>
-<p><strong>Coming soon</strong> to the macOS App Store and iPad App Store.</p>
+<hr>
+<h2 id="sprite-properties">Sprite Properties</h2>
+<h3 id="basic">Basic</h3>
+<ul>
+<li>
+<p><code>x</code>, <code>y</code>
+Position of the sprite on screen (in pixels)</p>
+</li>
+<li>
+<p><code>width</code>, <code>height</code>
+Size of the sprite (Read-only inferred from the image)</p>
+</li>
+<li>
+<p><code>active</code>
+Boolean — must be <code>true</code> for the sprite to be visible or updated</p>
+</li>
+<li>
+<p><code>imageGroup</code>, <code>imageIndex</code>
+Set the sprite’s image by group and index</p>
+</li>
+<li>
+<p><code>layerIndex</code>
+If set, the sprite is drawn as part of that layer instead of floating above</p>
+</li>
+</ul>
+<hr>
+<h3 id="animation">Animation</h3>
+<ul>
+<li>
+<p><code>animationFrom</code>, <code>animationTo</code>
+Range of frames to animate through</p>
+</li>
+<li>
+<p><code>fps</code>
+Frames per second for the animation</p>
+</li>
+<li>
+<p><code>wrapping</code>
+When <code>true</code>, wraps the sprite around the layer edges — perfect for Asteroids-style gameplay</p>
+</li>
+<li>
+<p><code>rotationOffset</code>
+Offset in degrees to apply during rotation.
+CHIPcade assumes that sprite images point <strong>upward</strong> by default (0° = up).
+If your sprite artwork points to the <strong>right</strong>, set <code>rotationOffset = -90</code> to align it properly when rotating.</p>
+</li>
+<li>
+<p><code>stop</code>
+Stops the current animation on the <strong>last frame</strong> in the range</p>
+</li>
+</ul>
+<hr>
+<h3 id="transform--appearance">Transform &amp; Appearance</h3>
+<ul>
+<li>
+<p><code>scale</code>
+Uniform scale (1.0 = default)</p>
+</li>
+<li>
+<p><code>rotation</code>
+Rotation in degrees</p>
+</li>
+<li>
+<p><code>alpha</code>
+Transparency (1.0 = fully visible, 0.0 = fully transparent)</p>
+</li>
+<li>
+<p><code>priority</code>
+Controls render order relative to other sprites (higher = drawn later)</p>
+</li>
+</ul>
+<hr>
+<h3 id="movement">Movement</h3>
+<ul>
+<li>
+<p><code>speed</code>
+Sets or reads the <strong>constant movement speed</strong> of the sprite in its rotation direction</p>
+</li>
+<li>
+<p><code>maxSpeed</code>
+Maximum allowed speed</p>
+</li>
+<li>
+<p><code>friction</code>
+Gradual reduction of speed over time</p>
+</li>
+<li>
+<p><code>halt</code>
+Immediately stops all sprite movement and acceleration</p>
+</li>
+</ul>
+<hr>
+<h2 id="sprite-functions">Sprite Functions</h2>
+<p>In addition to properties, sprites support a few built-in functions:</p>
+<ul>
+<li>
+<p><code>s[N].accelerate(value)</code>
+Applies an acceleration impulse in the direction of the sprite&rsquo;s current rotation.</p>
+</li>
+<li>
+<p><code>s[N].collisionWith(group)</code>
+Returns <code>true</code> if the sprite has collided with the given collision group.
+Use this inside your <code>update</code> loop to trigger events on contact.</p>
+</li>
+</ul>
+<hr>
+<h3 id="example">Example</h3>
+<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade">sprite[0].imageGroup = &#34;Ship&#34;
+sprite[0].animationFrom = 0
+sprite[0].animationTo = 3
+sprite[0].fps = 12
+sprite[0].wrapping = true
+sprite[0].x = 100
+sprite[0].y = 50
+sprite[0].active = true
+
+sprite[0].accelerate(0.5)
+
+if sprite[0].collisionWith(2)
+    notify(&#34;HandleCollision&#34;, 0.0)</code></pre></div>
+<hr>
+<p>Sprites are fast, flexible, and central to most CHIPcade games — from bullets to bosses.</p>
 
   <footer class="footline">
   </footer>
@@ -197,7 +329,9 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
           <ul class="enlarge morespace collapsible-menu">
             <li class="" data-nav-id="/news/index.html"><a class="padding" href="/news/index.html">News</a></li>
             <li class="" data-nav-id="/specs/index.html"><a class="padding" href="/specs/index.html">Hardware Specs</a></li>
-            <li class="" data-nav-id="/script/index.html"><a class="padding" href="/script/index.html">CHIPcade Script</a><ul id="R-subsections-ffc9b46f6bf4216af738686c36474de0" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/script/index.html"><a class="padding" href="/script/index.html">CHIPcade Script</a><ul id="R-subsections-ffc9b46f6bf4216af738686c36474de0" class="collapsible-menu">
+            <li class="" data-nav-id="/script/layers/index.html"><a class="padding" href="/script/layers/index.html">Layers</a></li>
+            <li class="active " data-nav-id="/script/sprites/index.html"><a class="padding" href="/script/sprites/index.html">Sprites</a></li></ul></li>
             <li class="" data-nav-id="/tutorials/index.html"><a class="padding" href="/tutorials/index.html">Tutorials</a></li>
           </ul>
         </div>
@@ -220,7 +354,7 @@ Features Authentic* 16-bit arcade chip with 8 general-purpose registers and 4 us
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-language">Language</label>
                     <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
-                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/index.html" lang="en-us" selected></option>
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/script/sprites/index.html" lang="en-us" selected></option>
                     </select>
                   </div>
                   <div class="clear"></div>

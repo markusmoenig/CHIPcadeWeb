@@ -7,7 +7,6 @@ weight: 1
 
 * First version
 
-
 #### Started CHIPcade Development Mid 2024
 
 Another journey begins
