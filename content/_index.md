@@ -1,6 +1,7 @@
 +++
 archetype = "home"
 title = "CHIPcade"
+description = "CHIPcade is a 16-bit virtual arcade chip for macOS and iPadOS. Build retro-style games with real-time graphics, sprites, layers, and a powerful assembly-inspired scripting language."
 +++
 
 **CHIPcade** is a 16-bit retro arcade chip... or at least it thinks it is.
