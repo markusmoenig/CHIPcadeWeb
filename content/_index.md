@@ -19,3 +19,7 @@ Program it on macOS and iPadOS to create your own classic-style games — no sol
 \*Okay, it's all software. But your game won't know the difference.
 
 **Coming soon** to the macOS App Store and iPad App Store.
+
+---
+
+![CHIPcade Screenshots](screenshot.png)
