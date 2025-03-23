@@ -5,26 +5,30 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.143.1">
     <meta name="generator" content="Relearn 7.3.2+8b70bdf31acd361aacf17a0e775504551af67b83">
-    <meta name="description" content="CHIPcade is powered by a mighty little 16-bit processor, complete with 8 general-purpose registers, a handful of event-driven extras (R8–R11), internal flags, and a real* stack. It can read and write from Data sections (a.k.a. memory), juggle image groups for sprites, and even crank out some audio — retro-style.
-Tucked inside is a dedicated Graphics Co-Processor (GCP), capable of managing 8 layers and up to 256 hardware-accelerated sprites without breaking a sweat.">
+    <meta name="description" content="Bullet Setup and Firing Example This example shows how to manage a pool of bullets using CHIPcade’s scripting language. We predefine 10 bullet sprites (indices 20–29) and reuse them when firing to avoid runtime allocation.
+Bullet Pool Setup The following code initializes 10 bullet sprites with default values and disables them until needed:
+SetupBullets: R0 = 20 setup: sprite[R0].imageGroup = &#34;Bullet&#34; sprite[R0].layerIndex = 0 sprite[R0].animationFrom = 0 sprite[R0].animationTo = 1 sprite[R0].rotationOffset = -90s sprite[R0].active = false sprite[R0].priority = -1s sprite[R0].speed = 4u sprite[R0].maxSpeed = 4u sprite[R0].collisionGroup = 1u sprite[R0].wrapping = true R0 &#43;= 1 jumpif R0 &lt; 30 ? setup return Firing a Bullet When a bullet is fired, the first inactive sprite in the pool is activated and placed at the centered forward position of the spaceship.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Hardware Specs - Arcade Chip Emulator">
-    <meta name="twitter:description" content="CHIPcade is powered by a mighty little 16-bit processor, complete with 8 general-purpose registers, a handful of event-driven extras (R8–R11), internal flags, and a real* stack. It can read and write from Data sections (a.k.a. memory), juggle image groups for sprites, and even crank out some audio — retro-style.
-Tucked inside is a dedicated Graphics Co-Processor (GCP), capable of managing 8 layers and up to 256 hardware-accelerated sprites without breaking a sweat.">
-    <meta property="og:url" content="http://localhost:1313/specs/index.html">
+    <meta name="twitter:title" content="Examples - Arcade Chip Emulator">
+    <meta name="twitter:description" content="Bullet Setup and Firing Example This example shows how to manage a pool of bullets using CHIPcade’s scripting language. We predefine 10 bullet sprites (indices 20–29) and reuse them when firing to avoid runtime allocation.
+Bullet Pool Setup The following code initializes 10 bullet sprites with default values and disables them until needed:
+SetupBullets: R0 = 20 setup: sprite[R0].imageGroup = &#34;Bullet&#34; sprite[R0].layerIndex = 0 sprite[R0].animationFrom = 0 sprite[R0].animationTo = 1 sprite[R0].rotationOffset = -90s sprite[R0].active = false sprite[R0].priority = -1s sprite[R0].speed = 4u sprite[R0].maxSpeed = 4u sprite[R0].collisionGroup = 1u sprite[R0].wrapping = true R0 &#43;= 1 jumpif R0 &lt; 30 ? setup return Firing a Bullet When a bullet is fired, the first inactive sprite in the pool is activated and placed at the centered forward position of the spaceship.">
+    <meta property="og:url" content="http://localhost:1313/examples/index.html">
     <meta property="og:site_name" content="Arcade Chip Emulator">
-    <meta property="og:title" content="Hardware Specs - Arcade Chip Emulator">
-    <meta property="og:description" content="CHIPcade is powered by a mighty little 16-bit processor, complete with 8 general-purpose registers, a handful of event-driven extras (R8–R11), internal flags, and a real* stack. It can read and write from Data sections (a.k.a. memory), juggle image groups for sprites, and even crank out some audio — retro-style.
-Tucked inside is a dedicated Graphics Co-Processor (GCP), capable of managing 8 layers and up to 256 hardware-accelerated sprites without breaking a sweat.">
+    <meta property="og:title" content="Examples - Arcade Chip Emulator">
+    <meta property="og:description" content="Bullet Setup and Firing Example This example shows how to manage a pool of bullets using CHIPcade’s scripting language. We predefine 10 bullet sprites (indices 20–29) and reuse them when firing to avoid runtime allocation.
+Bullet Pool Setup The following code initializes 10 bullet sprites with default values and disables them until needed:
+SetupBullets: R0 = 20 setup: sprite[R0].imageGroup = &#34;Bullet&#34; sprite[R0].layerIndex = 0 sprite[R0].animationFrom = 0 sprite[R0].animationTo = 1 sprite[R0].rotationOffset = -90s sprite[R0].active = false sprite[R0].priority = -1s sprite[R0].speed = 4u sprite[R0].maxSpeed = 4u sprite[R0].collisionGroup = 1u sprite[R0].wrapping = true R0 &#43;= 1 jumpif R0 &lt; 30 ? setup return Firing a Bullet When a bullet is fired, the first inactive sprite in the pool is activated and placed at the centered forward position of the spaceship.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
-    <meta itemprop="name" content="Hardware Specs - Arcade Chip Emulator">
-    <meta itemprop="description" content="CHIPcade is powered by a mighty little 16-bit processor, complete with 8 general-purpose registers, a handful of event-driven extras (R8–R11), internal flags, and a real* stack. It can read and write from Data sections (a.k.a. memory), juggle image groups for sprites, and even crank out some audio — retro-style.
-Tucked inside is a dedicated Graphics Co-Processor (GCP), capable of managing 8 layers and up to 256 hardware-accelerated sprites without breaking a sweat.">
-    <meta itemprop="wordCount" content="681">
-    <title>Hardware Specs - Arcade Chip Emulator</title>
-    <link href="/specs/index.xml" rel="alternate" type="application/rss+xml" title="Hardware Specs - Arcade Chip Emulator">
+    <meta itemprop="name" content="Examples - Arcade Chip Emulator">
+    <meta itemprop="description" content="Bullet Setup and Firing Example This example shows how to manage a pool of bullets using CHIPcade’s scripting language. We predefine 10 bullet sprites (indices 20–29) and reuse them when firing to avoid runtime allocation.
+Bullet Pool Setup The following code initializes 10 bullet sprites with default values and disables them until needed:
+SetupBullets: R0 = 20 setup: sprite[R0].imageGroup = &#34;Bullet&#34; sprite[R0].layerIndex = 0 sprite[R0].animationFrom = 0 sprite[R0].animationTo = 1 sprite[R0].rotationOffset = -90s sprite[R0].active = false sprite[R0].priority = -1s sprite[R0].speed = 4u sprite[R0].maxSpeed = 4u sprite[R0].collisionGroup = 1u sprite[R0].wrapping = true R0 &#43;= 1 jumpif R0 &lt; 30 ? setup return Firing a Bullet When a bullet is fired, the first inactive sprite in the pool is activated and placed at the centered forward position of the spaceship.">
+    <meta itemprop="wordCount" content="213">
+    <title>Examples - Arcade Chip Emulator</title>
+    <link href="/examples/index.xml" rel="alternate" type="application/rss+xml" title="Examples - Arcade Chip Emulator">
     <link href="/images/favicon.png?1742719694" rel="icon" type="image/png">
     <link href="/css/fontawesome-all.min.css?1742719694" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1742719694" rel="stylesheet"></noscript>
     <link href="/css/auto-complete.css?1742719694" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1742719694" rel="stylesheet"></noscript>
@@ -81,7 +85,7 @@ Tucked inside is a dedicated Graphics Co-Processor (GCP), capable of managing 8 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css">
     
   </head>
-  <body class="mobile-support html" data-url="/specs/index.html">
+  <body class="mobile-support html" data-url="/examples/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -95,12 +99,12 @@ Tucked inside is a dedicated Graphics Co-Processor (GCP), capable of managing 8 
                 <div class="topbar-content-wrapper">
 <nav class="TableOfContents">
   <ul>
-    <li><a href="#registers">Registers</a></li>
-    <li><a href="#16-bit-values">16-bit Values</a></li>
-    <li><a href="#data-sections">Data Sections</a></li>
-    <li><a href="#image-groups">Image Groups</a></li>
-    <li><a href="#audio">Audio</a></li>
-    <li><a href="#palette">Palette</a></li>
+    <li><a href="#bullet-setup-and-firing-example">Bullet Setup and Firing Example</a>
+      <ul>
+        <li><a href="#bullet-pool-setup">Bullet Pool Setup</a></li>
+        <li><a href="#firing-a-bullet">Firing a Bullet</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
                 </div>
@@ -108,7 +112,7 @@ Tucked inside is a dedicated Graphics Co-Processor (GCP), capable of managing 8 
             </div>
           </div>
           <span class="topbar-breadcrumbs highlightable">
-            Hardware Specs
+            Examples
           </span>
           <div class="topbar-area topbar-area-end" data-area="end">
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
@@ -123,88 +127,59 @@ Tucked inside is a dedicated Graphics Co-Processor (GCP), capable of managing 8 
         </div>
       </nav>
       <div id="R-main-overlay"></div>
-      <main id="R-body-inner" class="highlightable specs" tabindex="-1">
+      <main id="R-body-inner" class="highlightable examples" tabindex="-1">
         <div class="flex-block-wrapper">
 <article class="default">
   <header class="headline">
   </header>
 
-<h1 id="hardware-specs">Hardware Specs</h1>
+<h1 id="examples">Examples</h1>
 
-<p>CHIPcade is powered by a mighty little 16-bit processor, complete with 8 general-purpose registers, a handful of event-driven extras (R8–R11), internal flags, and a real* stack. It can read and write from Data sections (a.k.a. memory), juggle image groups for sprites, and even crank out some audio — retro-style.</p>
-<p>Tucked inside is a dedicated Graphics Co-Processor (GCP), capable of managing 8 layers and up to 256 hardware-accelerated sprites without breaking a sweat.</p>
-<p>*Okay, still software. But the stack is very real to CHIPcade.</p>
+<h2 id="bullet-setup-and-firing-example">Bullet Setup and Firing Example</h2>
+<p>This example shows how to manage a pool of bullets using CHIPcade&rsquo;s scripting language. We predefine 10 bullet sprites (indices 20–29) and reuse them when firing to avoid runtime allocation.</p>
+<h3 id="bullet-pool-setup">Bullet Pool Setup</h3>
+<p>The following code initializes 10 bullet sprites with default values and disables them until needed:</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade">SetupBullets:
+R0 = 20
+setup:
+sprite[R0].imageGroup = &#34;Bullet&#34;
+sprite[R0].layerIndex = 0
+sprite[R0].animationFrom = 0
+sprite[R0].animationTo = 1
+sprite[R0].rotationOffset = -90s
+sprite[R0].active = false
+sprite[R0].priority = -1s
+sprite[R0].speed = 4u
+sprite[R0].maxSpeed = 4u
+sprite[R0].collisionGroup = 1u
+sprite[R0].wrapping = true
+R0 += 1
+jumpif R0 &lt; 30 ? setup
+return</code></pre></div>
 <hr>
-<h2 id="registers">Registers</h2>
-<p>R0–R7 are your general-purpose registers — store numbers, do math, control logic, or just hoard values like a digital dragon.</p>
-<p>R8–R11 are special input/event registers wired directly to the user:</p>
-<ul>
-<li><strong>R8</strong> – Keycode of the currently pressed key</li>
-<li><strong>R9</strong> – Input state: <code>0</code> for up, <code>1</code> for down</li>
-<li><strong>R10</strong> – X coordinate of the input (touch/mouse)</li>
-<li><strong>R11</strong> – Y coordinate of the input</li>
-</ul>
-<p>These are mostly read-only, but you can write to R8 to clear the key state and move on.</p>
-<p>You’ll see all register values live in the visual CHIPcade Debugger — no hex-hacking needed.</p>
-<hr>
-<h2 id="16-bit-values">16-bit Values</h2>
-<p>Everything in CHIPcade — registers, memory, data — is a 16-bit value. But those 16 bits are surprisingly versatile:</p>
-<ul>
-<li><strong>Unsigned</strong> – Positive integers, written like <code>10u</code></li>
-<li><strong>Signed</strong> – Can go negative, written like <code>-2s</code></li>
-<li><strong>Float</strong> – Fractions and decimals, written like <code>0.02f</code></li>
-<li><strong>Unicode</strong> – Characters, like <code>&quot;A&quot;</code> or <code>'✓'</code></li>
-</ul>
-<p>CHIPcade may live in a pixelated past, but its data types are surprisingly flexible.</p>
-<hr>
-<h2 id="data-sections">Data Sections</h2>
-<p>Need memory? CHIPcade gives you as many <strong>Data sections</strong> as you want — each one holding <strong>1024 16-bit values</strong>. Plenty of room to stash scores, states, secrets, and whatever else your game dreams up.</p>
-<p>You can create new data sections (and rename them) using the ➕ button in the toolbar.</p>
-<p>Access them directly from CHIPcade Script by name:</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade">Data[0] = 10u        # Store an unsigned value
-Data[R0] = -2s       # Use a register as an index
-Data[2] = R4 - 0.02f # Store the result of a float calculation
-Data[3] = &#34;A&#34;        # Store a character</code></pre></div>
-<p>They’re simple, fast, and ready to abuse like it’s 1985.</p>
-<hr>
-<h2 id="image-groups">Image Groups</h2>
-<p>Need art? CHIPcade uses <strong>Image Groups</strong> to organize all your visuals — from single sprites to full-on tilesets.</p>
-<p>Create and rename image groups using the ➕ button in the toolbar. Then add images (or entire tilesets) with a click. You can drag and drop images to reorder them — the index matters!</p>
-<p>Images are stored in the group’s memory and accessed by index:</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade"># Assign a static image to sprite 0
-sprite[0].imageGroup = &#34;Background&#34;
-sprite[0].imageIndex = 0
+<h3 id="firing-a-bullet">Firing a Bullet</h3>
+<p>When a bullet is fired, the first inactive sprite in the pool is activated and placed at the centered forward position of the spaceship.</p>
+<p>We then call <code>notifyR7</code> to schedule automatic deactivation of the bullet after 1 second.</p>
+<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade">FireBullet:
+R0 = 20
+fire:
+# Choose the first inactive
+if sprite[R0].active == false
+    sprite[R0].active = true
+    R1 = 0u
+    goto Math.PlaceCenteredForward
+    # Expire it after 1 second
+    notifyR7(&#34;ExpireBullet&#34;, 1, R0)
+    return
+R0 += 1
+jumpif R0 &lt; 30 ? fire
+return
 
-# Assign an animation range to sprite 1 at 10 fps
-sprite[1].imageGroup = &#34;Ship&#34;
-sprite[1].animationFrom = 0
-sprite[1].animationTo = 3
-sprite[1].fps = 10</code></pre></div>
-<p>Want pixel-perfect control? CHIPcade’s got your back — one frame at a time.</p>
+ExpireBullet:
+sprite[R7].active = false
+return</code></pre></div>
+<p>This pattern avoids creating new sprites at runtime and gives full control over bullet lifespan, speed, and position — perfect for fast arcade-style shooters.</p>
 <hr>
-<h2 id="audio">Audio</h2>
-<p>Sound effects and music are handled through <strong>Audio Clips</strong> — short, individual audio files you can assign to events, buttons, lasers, explosions&hellip; you get the idea.</p>
-<p>Create and rename audio clips using the ➕ button in the toolbar. Then import your sounds using the import button. Each clip is stored individually and accessed by name.</p>
-<hr>
-<h2 id="palette">Palette</h2>
-<p>CHIPcade comes with a built-in <strong>Palette</strong> supporting up to <strong>256 colors</strong> — enough to cover everything from moody dungeon hues to neon space explosions.</p>
-<p>You can edit colors freely to match your game’s vibe. Colors are accessed by index, especially when drawing text:</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade"># Draws text at position (10, 10)  and palette index 13
-drawText(10, 10, &#34;Hello, World!&#34;, 13)</code></pre></div>
-<p>Want it grayscale? Pastel? Full vaporwave? The palette is yours to command.</p>
-<h1 id="graphical-co-processor">Graphical Co-Processor</h1>
-<p>CHIPcade’s <strong>Graphics Co-Processor (GCP)</strong> handles all the heavy lifting for visuals — fast, flexible, and ready to blast pixels like it&rsquo;s 1992.</p>
-<ul>
-<li>
-<p>Supports up to <strong>8 layers</strong> of graphics.
-Each layer can match the screen resolution or use a custom size for cool parallax and UI tricks.</p>
-</li>
-<li>
-<p>Includes <strong>256 hardware-accelerated sprites</strong>.
-Place them anywhere on screen or attach them to layers. Animate them, rotate them, make them explode — it’s all programmable.</p>
-</li>
-</ul>
-<p>For full control and examples, check out the <a href="/script/index.html">CHIPcade Script documentation</a>.</p>
 
   <footer class="footline">
   </footer>
@@ -254,9 +229,9 @@ Place them anywhere on screen or attach them to layers. Animate them, rotate the
         <div id="R-shortcutmenu-home" class="R-sidebarmenu">
           <ul class="enlarge morespace collapsible-menu">
             <li class="" data-nav-id="/news/index.html"><a class="padding" href="/news/index.html">News</a></li>
-            <li class="active " data-nav-id="/specs/index.html"><a class="padding" href="/specs/index.html">Hardware Specs</a></li>
+            <li class="" data-nav-id="/specs/index.html"><a class="padding" href="/specs/index.html">Hardware Specs</a></li>
             <li class="" data-nav-id="/script/index.html"><a class="padding" href="/script/index.html">CHIPcade Script</a><ul id="R-subsections-ffc9b46f6bf4216af738686c36474de0" class="collapsible-menu"></ul></li>
-            <li class="" data-nav-id="/examples/index.html"><a class="padding" href="/examples/index.html">Examples</a></li>
+            <li class="active " data-nav-id="/examples/index.html"><a class="padding" href="/examples/index.html">Examples</a></li>
           </ul>
         </div>
         <div id="R-shortcutmenu-shortcuts" class="R-sidebarmenu">
@@ -278,7 +253,7 @@ Place them anywhere on screen or attach them to layers. Animate them, rotate the
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-language">Language</label>
                     <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
-                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/specs/index.html" lang="en-us" selected></option>
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/examples/index.html" lang="en-us" selected></option>
                     </select>
                   </div>
                   <div class="clear"></div>

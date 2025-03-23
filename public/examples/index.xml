@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Examples - Arcade Chip Emulator</title>
+    <link>http://localhost:1313/examples/index.html</link>
+    <description>Bullet Setup and Firing Example This example shows how to manage a pool of bullets using CHIPcade’s scripting language. We predefine 10 bullet sprites (indices 20–29) and reuse them when firing to avoid runtime allocation.&#xA;Bullet Pool Setup The following code initializes 10 bullet sprites with default values and disables them until needed:&#xA;SetupBullets: R0 = 20 setup: sprite[R0].imageGroup = &#34;Bullet&#34; sprite[R0].layerIndex = 0 sprite[R0].animationFrom = 0 sprite[R0].animationTo = 1 sprite[R0].rotationOffset = -90s sprite[R0].active = false sprite[R0].priority = -1s sprite[R0].speed = 4u sprite[R0].maxSpeed = 4u sprite[R0].collisionGroup = 1u sprite[R0].wrapping = true R0 += 1 jumpif R0 &lt; 30 ? setup return Firing a Bullet When a bullet is fired, the first inactive sprite in the pool is activated and placed at the centered forward position of the spaceship.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/examples/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
