@@ -13,6 +13,7 @@ Program it on macOS and iPadOS to create your own classic-style games — no sol
 - Powerful graphics co-processor with 8 layers and 255 hardware sprites.
 - CHIPcade Script — a flexible, assembly-flavored scripting language.
 - Built-in data sections, audio support, and customizable palette.
+- Visual CHIP Debugger — shows CHIP state in realtime while your game runs.
 - Written in Swift and Metal for native performance on Apple hardware.
 - Created games run on macOS, iOS, and tvOS.
 

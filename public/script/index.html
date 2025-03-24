@@ -26,15 +26,15 @@ init — runs once when the game starts update — runs every frame (60 FPS by d
     <meta itemprop="description" content="With CHIPcade Script, you can program games for the CHIPcade system. It mixes high-level structure with low-level control — like a friendly assembly language that doesn’t bite.
 Code Modules Every CHIPcade game has at least two modules:
 init — runs once when the game starts update — runs every frame (60 FPS by default) You can add more modules using the ➕ button in the toolbar. For example, it’s common to add a Utilities module for reusable logic.">
-    <meta itemprop="wordCount" content="702">
+    <meta itemprop="wordCount" content="835">
     <title>CHIPcade Script - Arcade Chip Emulator</title>
     <link href="/script/index.xml" rel="alternate" type="application/rss+xml" title="CHIPcade Script - Arcade Chip Emulator">
-    <link href="/images/favicon.png?1742719694" rel="icon" type="image/png">
-    <link href="/css/fontawesome-all.min.css?1742719694" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1742719694" rel="stylesheet"></noscript>
-    <link href="/css/auto-complete.css?1742719694" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1742719694" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1742719694" rel="stylesheet">
-    <link href="/css/theme.css?1742719694" rel="stylesheet">
-    <link href="/css/format-html.css?1742719694" rel="stylesheet" id="R-format-style">
+    <link href="/images/favicon.png?1742797320" rel="icon" type="image/png">
+    <link href="/css/fontawesome-all.min.css?1742797320" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1742797320" rel="stylesheet"></noscript>
+    <link href="/css/auto-complete.css?1742797320" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1742797320" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1742797320" rel="stylesheet">
+    <link href="/css/theme.css?1742797320" rel="stylesheet">
+    <link href="/css/format-html.css?1742797320" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..';
@@ -118,6 +118,11 @@ init — runs once when the game starts update — runs every frame (60 FPS by d
       </ul>
     </li>
     <li><a href="#notify-and-notifyr7">notify and notifyR7</a></li>
+    <li><a href="#notifycollision">notifyCollision</a>
+      <ul>
+        <li><a href="#example">Example</a></li>
+      </ul>
+    </li>
     <li><a href="#available-functions">Available Functions</a></li>
   </ul>
 </nav>
@@ -272,6 +277,18 @@ notifyR7(&#34;DisableSprite&#34;, 1.0, R2)
 DisableSprite:
 sprite[R7].active = false</code></pre></div>
 <p>Think of it like retro timers with built-in callbacks.</p>
+<h2 id="notifycollision">notifyCollision</h2>
+<p>Calls a specified code tag when any sprite from one collision group collides with a sprite from another.</p>
+<p>This is especially useful when dealing with many potential collisions (e.g. lots of bullets and targets), where manually checking <code>sprite[x].collisionWith()</code> for each sprite would be too tedious or inefficient.</p>
+<p>When a collision is detected:</p>
+<ul>
+<li><code>R6</code> will contain the index of the sprite from the <strong>first group</strong></li>
+<li><code>R7</code> will contain the index of the sprite from the <strong>second group</strong></li>
+</ul>
+<p>You can then take action on both sprites inside the callback.</p>
+<h3 id="example">Example</h3>
+<div class="highlight wrap-code"><pre tabindex="0"><code class="language-chipcade" data-lang="chipcade"># Call Utilities.Collision if collision groups 10 and 11 collide
+notifyCollision(&#34;Utilities.Collision&#34;, 10, 11)</code></pre></div>
 <hr>
 <h2 id="available-functions">Available Functions</h2>
 <p>CHIPcade Script includes built-in math functions for handling common calculations:</p>
@@ -291,6 +308,15 @@ Converts radians to degrees.</p>
 <li>
 <p><code>radians(value)</code>
 Converts degrees to radians.</p>
+</li>
+<li>
+<p><code>random()</code>
+Returns a float between <code>0.0</code> and <code>1.0</code></p>
+</li>
+<li>
+<p><code>random(upTo)</code>
+Returns a random value between <code>0</code> and <code>upTo</code> (inclusive).
+The returned type matches the type of <code>upTo</code> — float, signed, or unsigned.</p>
 </li>
 </ul>
 
@@ -315,7 +341,7 @@ Converts degrees to radians.</p>
 <a href="/"><img src="/images/logo.png" alt="logo"></a>
         </div>
         <script>
-          window.index_js_url="/searchindex.en.js?1742719694";
+          window.index_js_url="/searchindex.en.js?1742797320";
         </script>
         <search><form action="/search/index.html" method="get">
           <div class="searchbox default-animation">
@@ -328,12 +354,12 @@ Converts degrees to radians.</p>
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1742719694" defer></script>
-        <script src="/js/lunr/lunr.min.js?1742719694" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1742719694" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1742719694" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1742719694" defer></script>
-        <script src="/js/search.js?1742719694" defer></script>
+        <script src="/js/auto-complete.js?1742797320" defer></script>
+        <script src="/js/lunr/lunr.min.js?1742797320" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1742797320" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1742797320" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1742797320" defer></script>
+        <script src="/js/search.js?1742797320" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation">
         <hr class="padding">
@@ -405,9 +431,9 @@ Converts degrees to radians.</p>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1742719694" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1742719694" defer></script>
-    <script src="/js/theme.js?1742719694" defer></script>
+    <script src="/js/clipboard.min.js?1742797320" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1742797320" defer></script>
+    <script src="/js/theme.js?1742797320" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-clike.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>

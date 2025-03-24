@@ -11,7 +11,7 @@ Prism.languages.chipcade = {
   boolean: /\b(true|false)\b/,
 
   function:
-    /\b(setFont|setFontSize|drawText|accelerate|collisionWith|notify|notifyR7|cos|sin)\b/,
+    /\b(setFont|setFontSize|drawText|accelerate|collisionWith|notify|notifyR7|cos|sin|random|notifyCollision)\b/,
 
   variable: /\b(r[0-9]{1,2}|register|s|sprite|l|layer)\b/i,
 
@@ -23,7 +23,7 @@ Prism.languages.chipcade = {
   operator: /\+|\-|\*|\/|%|=|==|!=|<=?|>=?|&|\||\^|~|<<|>>|!|\?/,
 
   property:
-    /\b(x|y|width|height|active|imageGroup|layerIndex|scale|rotation|imageIndex|animationFrom|animationTo|fps|wrapping|rotationOffset|priority|alpha|speed|maxSpeed|friction|stop|halt|collisionGroup|visible)\b/,
+    /\b(x|y|width|height|active|imageGroup|layerIndex|scale|rotation|imageIndex|animationFrom|animationTo|fps|wrapping|rotationOffset|priority|alpha|speed|maxSpeed|friction|stop|halt|collisionGroup|visible|radius)\b/,
 
   punctuation: /[{}[\];(),.:]/,
 

@@ -3,8 +3,6 @@ title: "Sprites"
 weight: 2
 ---
 
-## Sprites
-
 CHIPcade supports up to **255 hardware-accelerated sprites**. You can access them via:
 
 ```chipcade
@@ -43,6 +41,12 @@ Just like layers and registers, sprite indices can be hardcoded or dynamically c
 
 - `layerIndex`
   If set, the sprite is drawn as part of that layer instead of floating above
+
+- `radius`
+  Sets the collision radius for the sprite.
+  CHIPcade uses **circular collision detection**, and this property defines the effective radius for that sprite.
+  The default value is `0.5`, meaning the radius is **half the size of the sprite** (relative to its width/height).
+  Adjust this per sprite to fine-tune when collisions are detected.
 
 ---
 
@@ -108,7 +112,7 @@ In addition to properties, sprites support a few built-in functions:
 
 - `s[N].collisionWith(group)`
   Returns `true` if the sprite has collided with the given collision group.
-  Use this inside your `update` loop to trigger events on contact.
+  Use this inside your `update` loop to trigger events on contact. Use [notifyCollision](/script#notifyCollision) for a notification based collision detection.
 
 ---
 

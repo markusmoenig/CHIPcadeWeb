@@ -3,8 +3,6 @@ title: "Layers"
 weight: 1
 ---
 
-## Layers
-
 CHIPcade features **8 graphical layers**, managed by the Graphics Co-Processor. These are perfect for backgrounds, UI, parallax scrolling, and more.
 
 You can access layers using:

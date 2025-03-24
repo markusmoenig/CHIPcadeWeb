@@ -3,7 +3,7 @@
   <channel>
     <title>Layers - Arcade Chip Emulator</title>
     <link>http://localhost:1313/script/layers/index.html</link>
-    <description>Layers CHIPcade features 8 graphical layers, managed by the Graphics Co-Processor. These are perfect for backgrounds, UI, parallax scrolling, and more.&#xA;You can access layers using:&#xA;layer[2].width = 800 layer[R2].height = 600 l[R2].visible = true Just like registers, you can reference them by index or indirectly through a register.&#xA;Default Behavior All layers default to the screen resolution Layers are not visible by default — set visible = true to show them Layers are automatically blended from bottom to top, with layer[0] at the back and layer[7] on top Layer Properties Each layer supports the following properties:</description>
+    <description>CHIPcade features 8 graphical layers, managed by the Graphics Co-Processor. These are perfect for backgrounds, UI, parallax scrolling, and more.&#xA;You can access layers using:&#xA;layer[2].width = 800 layer[R2].height = 600 l[R2].visible = true Just like registers, you can reference them by index or indirectly through a register.&#xA;Default Behavior All layers default to the screen resolution Layers are not visible by default — set visible = true to show them Layers are automatically blended from bottom to top, with layer[0] at the back and layer[7] on top Layer Properties Each layer supports the following properties:</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/script/layers/index.xml" rel="self" type="application/rss+xml" />

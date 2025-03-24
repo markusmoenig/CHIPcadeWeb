@@ -199,6 +199,25 @@ sprite[R7].active = false
 
 Think of it like retro timers with built-in callbacks.
 
+## notifyCollision
+
+Calls a specified code tag when any sprite from one collision group collides with a sprite from another.
+
+This is especially useful when dealing with many potential collisions (e.g. lots of bullets and targets), where manually checking `sprite[x].collisionWith()` for each sprite would be too tedious or inefficient.
+
+When a collision is detected:
+
+- `R6` will contain the index of the sprite from the **first group**
+- `R7` will contain the index of the sprite from the **second group**
+
+You can then take action on both sprites inside the callback.
+
+### Example
+
+```chipcade
+# Call Utilities.Collision if collision groups 10 and 11 collide
+notifyCollision("Utilities.Collision", 10, 11)
+```
 ---
 
 ## Available Functions
@@ -216,3 +235,10 @@ CHIPcade Script includes built-in math functions for handling common calculation
 
 - `radians(value)`
   Converts degrees to radians.
+
+- `random()`
+  Returns a float between `0.0` and `1.0`
+
+- `random(upTo)`
+  Returns a random value between `0` and `upTo` (inclusive).
+  The returned type matches the type of `upTo` — float, signed, or unsigned.
