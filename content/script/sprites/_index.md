@@ -13,6 +13,8 @@ CHIPcade supports up to **255 hardware-accelerated sprites**. You can access the
 
 Just like layers and registers, sprite indices can be hardcoded or dynamically computed.
 
+Sprites can also represent text via the [text](#text) function.
+
 ---
 
 ## Default Behavior
@@ -133,6 +135,32 @@ sprite[0].accelerate(0.5)
 if sprite[0].collisionWith(2)
     notify("HandleCollision", 0.0)
 ```
+
+---
+
+## Text
+
+Sprites can also be used to render dynamic text using the `text()` function.
+
+This function associates a sprite with a string, a font, a font size, and a palette index (for color). Once set, the text behaves just like any other sprite — it can be positioned, animated, rotated, and layered as needed.
+
+### Syntax
+
+    sprite[N].text(content, fontName, fontSize, paletteIndex)
+
+- `content` — The string to display. You can concatenate strings and values.
+- `fontName` — The name of the font (e.g. `"Squada One"`).
+  Can be any system font, or one of the built-in CHIPcade fonts: `"Nova Square"` and `"Squada One"`.
+- `fontSize` — Font size in pixels (as a float)
+- `paletteIndex` — Which color to use from the global palette
+
+### Example
+
+```chipcade
+sprite[5].text("SCORE: " + Data[5], "Squada One", 16.0, 3)
+```
+
+This will display the current score stored in `Data[5]` using the specified font and color, all controlled through sprite 5. You can move and scale it like any other sprite.
 
 ---
 

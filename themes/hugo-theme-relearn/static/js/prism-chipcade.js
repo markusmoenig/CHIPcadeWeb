@@ -11,7 +11,7 @@ Prism.languages.chipcade = {
   boolean: /\b(true|false)\b/,
 
   function:
-    /\b(setFont|setFontSize|drawText|accelerate|collisionWith|notify|notifyR7|cos|sin|random|notifyCollision)\b/,
+    /\b(setFont|setFontSize|drawText|accelerate|collisionWith|notify|notifyR7|cos|sin|random|notifyCollision|text)\b/,
 
   variable: /\b(r[0-9]{1,2}|register|s|sprite|l|layer)\b/i,
 

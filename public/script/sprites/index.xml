@@ -3,7 +3,7 @@
   <channel>
     <title>Sprites - Arcade Chip Emulator</title>
     <link>http://localhost:1313/script/sprites/index.html</link>
-    <description>CHIPcade supports up to 255 hardware-accelerated sprites. You can access them via:&#xA;sprite[0].scale = 0.5 s[1].imageGroup = &#34;Bullet&#34; sprite[R2].layerIndex = 1 Just like layers and registers, sprite indices can be hardcoded or dynamically computed.&#xA;Default Behavior Sprites are inactive by default — you must set active = true to make them visible By default, sprites are not assigned to any layer and are rendered on top of all layers Sprites can be animated, moved, rotated, and participate in collisions Sprite Properties Basic x, y Position of the sprite on screen (in pixels)</description>
+    <description>CHIPcade supports up to 255 hardware-accelerated sprites. You can access them via:&#xA;sprite[0].scale = 0.5 s[1].imageGroup = &#34;Bullet&#34; sprite[R2].layerIndex = 1 Just like layers and registers, sprite indices can be hardcoded or dynamically computed.&#xA;Sprites can also represent text via the text function.&#xA;Default Behavior Sprites are inactive by default — you must set active = true to make them visible By default, sprites are not assigned to any layer and are rendered on top of all layers Sprites can be animated, moved, rotated, and participate in collisions Sprite Properties Basic x, y Position of the sprite on screen (in pixels)</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/script/sprites/index.xml" rel="self" type="application/rss+xml" />
