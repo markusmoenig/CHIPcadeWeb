@@ -23,7 +23,7 @@ Prism.languages.chipcade = {
   operator: /\+|\-|\*|\/|%|=|==|!=|<=?|>=?|&|\||\^|~|<<|>>|!|\?/,
 
   property:
-    /\b(x|y|width|height|active|imageGroup|layerIndex|scale|rotation|imageIndex|animationFrom|animationTo|fps|wrapping|rotationOffset|priority|alpha|speed|maxSpeed|friction|stop|halt|collisionGroup|visible|radius)\b/,
+    /\b(x|y|width|height|active|imageGroup|layerIndex|scale|rotation|imageIndex|animationFrom|animationTo|fps|wrapping|rotationOffset|priority|alpha|speed|maxSpeed|friction|stop|halt|collisionGroup|visible|radius|mode)\b/,
 
   punctuation: /[{}[\];(),.:]/,
 

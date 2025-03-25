@@ -10,6 +10,7 @@ You can access layers using:
 ```chipcade
     layer[2].width =  800
     layer[R2].height = 600
+    layer[2].mode = "centered"
     l[R2].visible = true
 ```
 
@@ -28,6 +29,21 @@ Just like registers, you can reference them by index or indirectly through a reg
 ## Layer Properties
 
 Each layer supports the following properties:
+
+- `mode`
+  Controls how the layer is positioned on screen.
+  - `"manual"` — You control the position using `x` and `y` (this is the default).
+  - `"centered"` — Automatically centers the layer on the screen (if it has a custom size).
+
+- `x`
+  Horizontal offset of the layer on screen.
+  Only used when `mode` is set to `"manual"`.
+  Default: `0`
+
+- `y`
+  Vertical offset of the layer on screen.
+  Only used when `mode` is set to `"manual"`.
+  Default: `0`
 
 - `width`
   Sets the width of the layer in pixels. This can be different from the screen size.
